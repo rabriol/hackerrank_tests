@@ -23,14 +23,14 @@ public class BinarySearchTree {
             System.out.println(checkBTS(eigth));
         }
 
-        public static boolean checkBTS(Node1 Node1) {
-            return checkSubBTS(Integer.MIN_VALUE, Integer.MAX_VALUE, Node1);
+        public static boolean checkBTS(Node1 node1) {
+            return checkSubBTS(Integer.MIN_VALUE, Integer.MAX_VALUE, node1);
         }
 
-        public static boolean checkSubBTS(int min, int max, Node1 Node1) {
-            if (Node1 == null) return true;
-            if (max < Node1.getValue() || min > Node1.getValue()) return false;
-            return checkSubBTS(min, Node1.getValue(), Node1.getLeft()) && checkSubBTS(Node1.getValue(), max, Node1.getRight());
+        public static boolean checkSubBTS(int min, int max, Node1 node1) {
+            if (node1 == null) return true;
+            if (max < node1.getValue() || min > node1.getValue()) return false;
+            return checkSubBTS(min, node1.getValue(), node1.getLeft()) && checkSubBTS(node1.getValue(), max, node1.getRight());
         }
 
     }

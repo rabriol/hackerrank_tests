@@ -14,6 +14,7 @@ public class FindUniqueRemoval {
         System.out.println(checkUniqueRemoval(new int[]{1, 2, 8, 10, 5, 6, 7}));
         System.out.println(checkUniqueRemoval(new int[]{7, 5, 6, 1}));
         System.out.println(checkUniqueRemoval(new int[]{1,2,1,2}));
+        System.out.println(checkUniqueRemoval(new int[]{1,2,1,2}));
     }
 
     public static boolean checkUniqueRemoval(int[] numbers) {
